@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h2 style="margin-left: 400px; color: black;">Nyondo Stock Registration Form</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4 bg-info p-4">
+          <div class="sidebar">
+            <!-- <h2>Nyondo Stock Registration Form</h2> -->
+            <ul>
+              <li>Dashboard</li>
+              <li>Stock Registration</li>
+              <li>Inventory</li>
+              <li>Suppliers</li>
+              <li>Reports</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-8 bg-info p-2">
+          <form action="">
+            <!-- section 1 -->
+
+            <h2 class="text-center">Basic Stock Details</h2>
+
+            <div class="row my-3">
+              <div class="col">
+                <label for="date" class="form-label">Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="date"
+                  placeholder="date"
+                />
+              </div>
+              <div class="col">
+                <label for="stock-Id" class="form-label">Stock Id</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="stock-Id"
+                  placeholder="Id no."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="item-name" class="form-label">Item Name</label>
+                <input
+                  type="value"
+                  class="form-control"
+                  id="email"
+                  placeholder="item name"
+                />
+              </div>
+
+              <div class="col">
+                <label for="item-category" class="form-label"
+                  >Select item category</label
+                >
+                <select id="select-item-category" class="form-select">
+                  <option selected>Cement</option>
+                  <option>Nails & screws</option>
+                  <option>Paint</option>
+                  <option>Electrical items</option>
+                  <option>Roofing materials</option>
+                  <option>Plumbing materials</option>
+                  <option>Hand tools</option>
+                  <option>Power tools</option>
+                </select>
+              </div>
+            </div>
+            <!-- end of section 1  -->
+            <h2 style="margin-left: 300px">Supplier Details</h2>
+            <!-- section 2 -->
+            <div class="row">
+              <div class="col">
+                <label for="supplier-name" class="form-label"
+                  >Supplier Name</label
+                >
+                <input
+                  type="name"
+                  class="form-control"
+                  id="supplier-name"
+                  placeholder="name"
+                />
+              </div>
+              <div class="col">
+                <label for="supplier-contact" class="form-label"
+                  >Supplier Contact</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="supplier-contact"
+                  placeholder="contact"
+                />
+              </div>
+            </div>
+            <!-- end section 2 -->
+            <h2 class="text-center">Quantity Details</h2>
+            <!-- section 3 -->
+
+            <div class="row my-3">
+              <div class="col">
+                <label for="quantity received" class="form-label"
+                  >Quantity received</label
+                >
+                <input
+                  type="value"
+                  class="form-control"
+                  id="quantity-received"
+                  placeholder="quantity"
+                />
+              </div>
+              <div class="col">
+                <label for="unit-type" class="form-label"
+                  >Select unit-type</label
+                >
+                <select id="select-unit-type" class="form-select">
+                  <option selected>box</option>
+                  <option>pieces</option>
+                  <option>kilos</option>
+                  <option>litres</option>
+                  <option>kilograms</option>
+                </select>
+              </div>
+            </div>
+            <!-- end section 3 -->
+            <h2 class="text-center">Cost Details</h2>
+            <!-- section 4 -->
+            <div class="row my-3">
+              <div class="col">
+                <label for="buying price/unit" class="form-label"
+                  >Buying price per unit</label
+                >
+                <input
+                  type="value"
+                  class="form-control"
+                  id="buying price per unit"
+                  placeholder="cost"
+                />
+              </div>
+              <div class="col">
+                <label for="selling price/unit">Selling price per unit</label>
+                <input
+                  type="value"
+                  class="form-control"
+                  id="selling-price-per-unit"
+                  placeholder="cost"
+                />
+              </div>
+              <div class="col">
+                <label for="total cost">Total cost</label>
+                <input
+                  type="value"
+                  class="form-control"
+                  id="total cost"
+                  placeholder="cost"
+                />
+              </div>
+            </div>
+            <!-- end section 4 -->
+            <h2 class="text-center">Storage Information</h2>
+            <!-- section 5 -->
+            <div class="row">
+              <div class="col">
+                <label for="storage location"> Storage room </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="storage room"
+                  placeholder="room number"
+                />
+              </div>
+              <div class="col">
+                <label for="shelf number">Shelf number</label>
+                <input
+                  class="form-control"
+                  id="shelf-number"
+                  type="text"
+                  placeholder="number"
+                />
+              </div>
+              <div class="col">
+                <label for="stock condition" class="form-label"
+                  >Select Stock condition</label
+                >
+                <select id="stock-condition" class="form-select">
+                  <option selected>Good</option>
+                  <option>Damaged</option>
+                  <option>Inspection needed</option>
+                  <option>Fair</option>
+                </select>
+              </div>
+            </div>
+            <!-- end section 5 -->
+            <h2 class="text-center">Authorization</h2>
+            <!-- section 6 -->
+            <div class="row">
+              <div class="col">
+                <label for="received by">Received by</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="received-by"
+                  placeholder="Staff Name"
+                />
+              </div>
+              <div class="col">
+                <label for="signature">Signature</label>
+                <input
+                  class="form-control"
+                  id="signature"
+                  type="text"
+                  placeholder="signature"
+                />
+              </div>
+              <div class="col">
+                <label for="Manager-approval">Manager Approval</label>
+                <input
+                  class="form-control"
+                  id="Manager-approval"
+                  type="text"
+                  placeholder="signature"
+                />
+              </div>
+            </div>
+
+            <div class="row my-1">
+              <div class="col">
+               <div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-danger" type="button">Cancel</button>
+  <button class="btn btn-success" type="button">Register</button>
+</div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
