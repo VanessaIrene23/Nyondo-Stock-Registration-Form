@@ -8,6 +8,8 @@
 
 .sidebar ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sidebar li {
@@ -20,4 +22,16 @@
 
 .sidebar li:hover {
   background: #1ec6e0;
+}
+.sidebar ul li a {
+  display: block;
+  color: rgb(240, 240, 244);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
